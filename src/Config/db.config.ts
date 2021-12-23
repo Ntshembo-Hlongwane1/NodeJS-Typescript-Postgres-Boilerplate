@@ -81,7 +81,7 @@ export class dbConfig implements DbConfig {
                     addmissionCritea JSON,
                     applicationFee JSON,
                     applicationRequirements JSON,
-                    gendar VARCHAR(1),
+                    gender VARCHAR(1),
                     country JSON,
                     deadline JSON,
                     firstOption VARCHAR(150),

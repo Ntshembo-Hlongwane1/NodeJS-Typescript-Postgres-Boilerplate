@@ -5,7 +5,7 @@ CREATE TABLE IF NOT EXISTS GeneralQuestions(
   family JSON,
   contact JSON,
   dob Date,
-  gendar VARCHAR(1),
+  gender VARCHAR(1),
   country JSON,
   account_id INTEGER REFERENCES Account(id),
 );
