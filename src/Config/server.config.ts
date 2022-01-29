@@ -12,7 +12,12 @@ export class ServerConfig {
   }
 
   middleware(): void {
-    this.server.use(cors());
+    this.server.use(
+      cors({
+        origin: 'http://localhost:3000',
+        credentials: true,
+      })
+    );
   }
 
   routes(): void {
