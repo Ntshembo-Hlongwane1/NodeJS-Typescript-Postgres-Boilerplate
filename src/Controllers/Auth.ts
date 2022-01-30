@@ -419,6 +419,7 @@ export class AuthController implements Auth {
 
       const token_payload = {
         email: user.email,
+        id: user.id,
       };
       const token = sign(token_payload, process.env.cookie_secret as string, { expiresIn: '365d' });
       return response.status(200).json({ token });

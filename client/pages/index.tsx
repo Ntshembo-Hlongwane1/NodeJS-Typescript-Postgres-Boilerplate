@@ -10,7 +10,7 @@ const Home: NextPage = () => {
         <title>UNI CONENCT</title>
         <meta
           name="description"
-          content="his application is for simplifying the process of applying to universities for students"
+          content="This application is for simplifying the process of applying to universities for students"
         />
         <link rel="icon" href="/favicon.ico" />
       </Head>
