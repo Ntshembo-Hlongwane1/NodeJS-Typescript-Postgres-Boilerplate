@@ -1,11 +1,10 @@
 import { config } from 'dotenv';
 import { ServerConfig } from './Config/server.config';
 import { Application } from 'express';
-import { dbConfig } from './Config/db.config';
 config();
 
 export class API {
-  PORT: string | number = process.env.PORT ?? 5000;
+  PORT: string | number = process.env.PORT ?? 4231;
   serverConfig: ServerConfig;
   server: Application;
 
@@ -16,9 +15,8 @@ export class API {
   }
 
   init(): void {
-    new dbConfig().init();
     this.server.listen(this.PORT, () => {
-      return console.log(`Server started in PORT ${this.PORT}`);
+      return console.log(`Server started in PORT ${this.PORT} 🚀`);
     });
   }
 }

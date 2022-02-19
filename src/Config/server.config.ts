@@ -1,7 +1,6 @@
 import express, { Application } from 'express';
 import cors from 'cors';
 import { wrapper } from '../Middlewares/Wrapper';
-import AuthRoute from '../Routes/Auth';
 
 export class ServerConfig {
   server: Application = express();
@@ -25,7 +24,6 @@ export class ServerConfig {
       response.status(200).json({ msg: 'Test' });
     });
 
-    this.server.use(AuthRoute);
     //Error Handler
     this.server.use(wrapper);
   }
